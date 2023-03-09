@@ -1,0 +1,444 @@
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family : sans-serif;
+}
+
+section {
+    width : 100%;
+    height : 100vh; 
+    background-image: url(Images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+section nav {
+    width : 100%;
+    height : 12%;
+    display : flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 10px rgb(240, 7, 104);
+    background: #fff;
+    left: 0;
+    z-index: 100;
+}
+
+section nav .logo img {
+    width : 120px;
+    cursor: pointer;
+    margin: 8px 0;
+}
+
+section nav ul {
+    list-style : none;
+}
+
+section nav li {
+    display : inline-block;
+    margin : 0 10px;
+}
+
+section nav li a {
+    color : #000;
+    text-decoration : none;
+}
+
+section nav li a:hover {
+    color : rgb(240, 7, 104);
+}
+
+section nav  .social_icons i {
+    margin : 0 8px;
+    font-size : 18px;
+}
+
+section nav  .social_icons i:hover {
+    color : rgb(240, 7, 104);
+    cursor: pointer;
+}
+
+section .main {
+    display : flex;
+    align-items : center;
+    justify-content: space-around;
+    position : relative;
+    top : 10%;
+}
+
+section .main h1 {
+    position : relative;
+    font-size : 55px;
+    top : 80px;
+    left : 25px;
+}
+
+section .main h1 span {
+    color : rgb(240, 7, 104);
+}
+
+section .main p {
+    width : 650px;
+    text-align : justify;
+    line-height : 22px;
+    position : relative;
+    top : 125px;
+    left : 25px;
+}
+
+section .main .main_btn {
+    background :rgb(240, 7, 104);
+    padding : 10px 20px;
+    top : 200px;
+    left : 25px;
+    position: relative;
+    color : #fff;
+    text-decoration : none;
+}
+
+section .main .main_img img {
+    width : 780px;
+    left : 20px;
+    top : 90px;
+    position : relative;
+}
+
+.services {
+    width : 100%;
+    height : auto;
+    margin : 35px 0;
+}
+
+.services .service_box {
+    display: flex;
+    align-items: center;
+    width : 95%;
+    justify-content: space-around;
+    margin : 0 auto;
+}
+
+.services .service_box .service_card {
+    text-align : center;
+    width : 310px;
+    height : auto;
+    box-shadow: 0 0 8px rgb(240, 7, 104);
+    padding : 15px 10px;
+}
+
+.services .service_box .service_card i {
+    color :rgb(240, 7, 104);
+    cursor: pointer;
+    margin-bottom: 15px;
+    font-size : 45px;
+}
+
+.services .service_box .service_card h3 {
+    margin-bottom : 10px;
+}
+
+.about {
+    width : 100%;
+    height : auto;
+    align-items : center;
+    padding : 20px;
+    display : flex;
+    justify-content: space-around;
+}
+
+.about .about_image img{
+    width : 800px;
+}
+
+.about .about_tag h1 {
+    font-size : 45px;
+    position: relative;
+    bottom : 35px;
+}
+
+.about .about_tag p {
+    line-height : 22px;
+    margin-bottom : 15px;
+    text-align : justify;
+    width : 500px;
+}
+
+.about .about_tag .about_btn {
+    padding : 10px 20px;
+    color : #fff;
+    background :rgb(240, 7, 104);
+    text-align : center;
+    text-decoration : none;
+    top : 50px;
+    position: relative;
+}
+
+.featured {
+    width : 100%;
+    height : 100vh;
+    padding : 0 70px;
+}
+
+.featured h1 {
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-size : 45px;
+}
+
+.featured .featured_box {
+    margin : 0 auto;
+    display : grid;
+    width : 95%;
+    height : 60vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    overflow: hidden;
+    overflow-x : scroll;
+}
+
+.featured .featured_box .featured_book_card {
+    width : 250px;
+    height : 420px;
+    border : 1px solid rgb(240, 7, 104);
+    text-align : center;
+    padding : 5px;
+    margin : auto 20px;
+}
+
+.featured .featured_box .featured_book_card:hover {
+    box-shadow : 0 0 5px rgb(240, 7, 104);
+}
+
+.featured .featured_box .featured_book_img img {
+    width : 150px;
+    height : auto;
+}
+
+.featured .featured_box .featured_book_tag h2 {
+    margin : 12px;
+}
+
+.featured .featured_box .featured_book_tag .writer {
+    color : #919191;
+}
+
+.featured .featured_box .featured_book_tag .categories {
+    color :rgb(240, 7, 104);
+    margin-top : 8px;
+}
+
+.featured .featured_box .featured_book_tag .book_price {
+    font-weight: bold;
+    margin-top : 8px;
+    margin-bottom : 15px;
+}
+
+.featured .featured_box .featured_book_tag .book_price sub {
+    font-weight : 100;
+    padding : 0 5px;
+}
+
+.featured .featured_box .featured_book_tag .f_btn {
+    padding : 8px 20px;
+    color : #000;
+    text-decoration: none;
+    border : 2px solid rgb(240, 7, 104);
+}
+
+::-webkit-scrollbar {
+    width : 10px;
+    height : 5px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+    background :rgb(240, 7, 104);
+    border-radius : 10px;
+}
+
+.new_arrivals {
+    width : 100%;
+    height : 100vh;
+    margin-bottom : 35px;
+}
+
+.new_arrivals h1 {
+    font-size : 50px;
+    margin-bottom : 35px;
+    text-align : center;
+}
+
+.new_arrivals .new_arrivals_box{
+    width : 95%;
+    margin : 0 auto;
+    display : grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 25px 0;
+}
+
+.new_arrivals .new_arrivals_box .new_arrivals_card {
+    width : 250px;
+    height : 340px;
+    text-align: center;
+    padding : 5px;
+    border : 1px solid #919191;
+}
+
+.new_arrivals .new_arrivals_box .new_arrivals_card:hover {
+    box-shadow : 0 0 2px rgb(240, 7, 104);
+}
+
+.new_arrivals .new_arrivals_box .new_arrivals_card .new_arrivals_img {
+    width : 150px;
+    height : 220px;
+    cursor : pointer;
+    margin : 0 auto;
+    box-shadow : 0 0 8px rgba(0, 0, 0, 0.5);
+    overflow : hidden;
+}
+
+.new_arrivals .new_arrivals_box .new_arrivals_card .new_arrivals_img img {
+    width : 100%;
+    height : 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+}
+
+.new_arrivals .new_arrivals_box .new_arrivals_card:hover .new_arrivals_img img{
+    transform : scale(1.1);
+}
+
+.new_arrivals .new_arrivals_box .new_arrivals_card .arrival_tag p {
+    font-family: queen of camelot;
+    font-size : 20px;
+    margin : 8px 0;
+}
+
+.new_arrivals .new_arrivals_box .new_arrivals_card .arrival_tag .arrivals_icon {
+    color :rgb(240, 7, 104);
+    margin-bottom : 12px;
+}
+
+.new_arrivals .new_arrivals_box .new_arrivals_card .arrival_tag .arrivals_btn {
+    border : 2px solid rgb(240, 7, 104);
+    padding : 8px 20px;
+    color : #000;
+    text-decoration : none;
+}
+
+.reviews {
+    width : 100%;
+    height : auto;
+}
+
+.reviews h1 {
+    text-align: center;
+    margin-top : 55px;
+    font-size : 50px;
+}
+
+.reviews .review_box {
+    width  : 95%;
+    height : 50vh;
+    justify-content: center;
+    display : flex;
+    margin : 15px auto;
+    align-items : center;
+}
+
+.reviews .review_box .review_card {
+    width : 400px;
+    height : 350px;
+    box-shadow : 0 0 8px rgb(240, 7, 104);
+    padding : 15px;
+    margin : 0 7px; 
+}
+
+.reviews .review_box .review_card i {
+    float : right;
+    font-size  : 120px;
+    position : relative;
+    bottom : 20px;
+    color : #eaeeae;
+}
+
+.reviews .review_box .review_card .card_top img {
+    width : 80px;
+    border-radius : 50%;
+    margin-bottom : 10px;
+}
+
+.reviews .review_box .review_card .card p {
+    margin : 10px 0 10px 0;
+    text-align : justify;
+    line-height: 17px;
+}
+
+.reviews .review_box .review_card .card .review_icon i {
+    font-size : 16px;
+    float : left;
+    padding : 0 1px;
+    margin-top: 20px;
+    color : rgb(240, 7, 104);
+}
+
+footer{
+    width : 100%;
+    background: #eaeeae;
+}
+
+footer .footer_main {
+    width : 100%;
+    display: flex;
+    justify-content: space-around; 
+}
+
+footer .footer_main .tag {
+    margin : 10px 0;
+}
+
+footer .footer_main .tag img {
+    width : 100px;
+    margin-bottom : 10px;
+}
+
+footer .footer_main .tag p {
+    line-height: 22px;
+    width : 250px;
+    text-align: justify;
+}
+
+footer .footer_main .tag h1 {
+    font-size: 25px;
+    margin : 25px 0;
+    color : #000;
+}
+
+footer .footer_main .tag a {
+    text-decoration: none;
+    display: block;
+    color : #000;
+    margin : 10px 0;
+}
+
+footer .footer_main .tag  i {
+    margin-right : 10px;
+    /* font : arial; */
+}
+
+footer .footer_main .tag .social_link {
+    margin : 0 5px;
+}
+
+footer .end p{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    padding: 15px;
+    color : #000;
+}
